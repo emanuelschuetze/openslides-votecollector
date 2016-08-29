@@ -50,8 +50,8 @@
       <td ng-if="!poll.yesnoabstain">{{ vote.value }}
       <td ng-if="!poll.yesnoabstain">
         <a ng-if="vote.candidate" href="" ui-sref="users.user.detail({id: vote.candidate.id})">{{ vote.candidate.get_full_name() }}</a>
-        <span ng-if="!vote.candidate && vote.value == 0"><i><translate>Abstaining</translate></i></span>
-        <span ng-if="!vote.candidate && vote.value != 0"><i><translate>Invalid entry</translate></i></span>
+        <span ng-if="!vote.candidate && vote.value == 0"><i><translate>Abstain</translate></i></span>
+        <span ng-if="!vote.candidate && vote.value != 0"><i><translate>Invalid</translate></i></span>
     </tr>
   </table>
 </div>
